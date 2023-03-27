@@ -18,6 +18,6 @@ spec:
         - ports:
             - containerPort: 80
           name: photos-application
-          image: bhuvanprasad/photosapp:latest
+          image: bhuvanprasad/photosapp:4528925502
       imagePullSecrets:
         - name: dockerhub-cred
