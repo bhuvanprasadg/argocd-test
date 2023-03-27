@@ -17,6 +17,10 @@ spec:
   syncPolicy:
     syncOptions:
     - CreateNamespace=true
+    - name: SyncTimeout
+          value: "600"
+        - name: SyncWave
+          value: "1"
 
     automated:
       selfHeal: true
