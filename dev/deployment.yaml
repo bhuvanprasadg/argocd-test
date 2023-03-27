@@ -15,7 +15,7 @@ spec:
         app: photos
     spec:
       containers:
+        - ports:
+            - containerPort: 80
           name: photos-application
           image: bhuvanprasad/photosapp:v1
-          ports:
-            - containerPort: 80
