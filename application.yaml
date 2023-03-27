@@ -18,7 +18,7 @@ spec:
     syncOptions:
     - CreateNamespace=true
     - name: SyncTimeout
-          value: "600"
+          value: "10"
         - name: SyncWave
           value: "1"
 
