@@ -2,7 +2,7 @@ apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
   name: photosapp-argo-application
-  namespace: photosapp
+  namespace: argocd
 spec:
   project: default
 
