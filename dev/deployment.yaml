@@ -20,29 +20,3 @@ spec:
           name: photos-application
           image: nginx:latest
           imagePullPolicy: Always
----
-apiVersion: storage.k8s.io/v1
-kind: StorageClass
-metadata:
-  name: efs-sc
-provisioner: efs.csi.aws.com
-parameters:
-  provisioningMode: efs-ap
----
-apiVersion: v1
-kind: PersistentVolume
-metadata:
-  name: efs-pv
-spec:
-  capacity:
-    storage: 5Gi
-  volumeMode: Filesystem
-  accessModes:
-    - ReadWriteOnce
-  persistentVolumeReclaimPolicy: Retain
-  storageClassName: efs-sc
-  csi:
-    driver: efs.csi.aws.com
-    volumeHandle: fs-0c0a893eb0eda50bf
-    volumeAttributes:
-      encryptInTransit: "true"
