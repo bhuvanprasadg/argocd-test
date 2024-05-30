@@ -4,7 +4,7 @@ metadata:
   name: myclaim
 spec:
   accessModes:
-    - ReadWriteMany
+    - ReadWriteOnce
   volumeName: efs-pva
   storageClassName: efs-sc
   resources:
