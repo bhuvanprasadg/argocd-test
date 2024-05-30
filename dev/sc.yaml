@@ -9,7 +9,7 @@ parameters:
 apiVersion: v1
 kind: PersistentVolume
 metadata:
-  name: efs-pv
+  name: efs-pva
 spec:
   capacity:
     storage: 5Gi
