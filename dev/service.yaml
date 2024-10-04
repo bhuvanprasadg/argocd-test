@@ -1,10 +1,10 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: photosapplication-service
+  name: nginx-service
 spec:
   selector:
-    app: photos
+    app: nginx
   ports:
     - port: 80
       targetPort: 80
