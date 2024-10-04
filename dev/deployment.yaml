@@ -1,22 +1,22 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: photosapplication-deployment
+  name: nginx-deployment
   labels:
-    app: photos
+    app: nginx
 spec:
   replicas: 5
   selector:
     matchLabels:
-      app: photos
+      app: nginx
   template:
     metadata:
       labels:
-        app: photos
+        app: nginx
     spec:
       containers:
         - ports:
             - containerPort: 80
-          name: photos-application
+          name: nginx-application
           image: nginx:latest
           imagePullPolicy: Always
